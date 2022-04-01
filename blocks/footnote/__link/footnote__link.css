@@ -1,0 +1,19 @@
+.footnote__link {
+  margin: 0;
+  padding: 0;
+  color: var(--title-color);
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  color: var(--title-color);
+  opacity: 1;
+  text-decoration: none;
+  transition: opacity 0.5s ease-in-out;
+  cursor: url(../../../img/cursor.svg), pointer;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+.footnote__link:hover {
+  opacity: 0.75;
+}/*# sourceMappingURL=footnote__link.css.map */

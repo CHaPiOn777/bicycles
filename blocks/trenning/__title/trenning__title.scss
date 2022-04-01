@@ -1,0 +1,5 @@
+@import '../../../mixins/mixins';
+
+.trenning__title {
+  @include reset;
+}

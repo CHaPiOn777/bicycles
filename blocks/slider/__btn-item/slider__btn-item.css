@@ -1,0 +1,16 @@
+.slider__btn-item {
+  background-color: var(--bg-slider-btn);
+  cursor: url(../../../img/cursor.svg), pointer;
+  border: none;
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider__btn-item:hover {
+  opacity: 0.6;
+}/*# sourceMappingURL=slider__btn-item.css.map */

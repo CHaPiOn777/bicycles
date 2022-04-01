@@ -1,0 +1,11 @@
+@import '../../../mixins/mixins';
+
+.block-text__title {
+  @include reset;
+  @include white-title;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  margin-top: 80px;
+}

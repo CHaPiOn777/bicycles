@@ -1,0 +1,11 @@
+@import '../../../mixins/mixins';
+
+.info-citate__title {
+  @include reset;
+  @include white-title;
+  max-width: 470px;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: -0.5px;
+}

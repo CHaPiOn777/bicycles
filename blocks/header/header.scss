@@ -1,0 +1,10 @@
+@import '../../mixins/mixins';
+
+.header {
+  @include bg-white;
+  padding: 28px 120px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all .5s ease-in-out;
+}

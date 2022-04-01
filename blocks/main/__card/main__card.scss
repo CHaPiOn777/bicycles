@@ -1,0 +1,15 @@
+@import '../../../mixins/mixins';
+
+.main__card {
+  @include drop-shadow;
+
+  background-color: #F4F4F4;
+  position: sticky;
+  top: 350px;
+  bottom: 50px;
+  right: 370px;
+
+  width: 440px;
+  height: 300px;
+  border-radius: 20px;
+}

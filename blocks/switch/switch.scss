@@ -1,0 +1,10 @@
+@import '../../mixins/mixins';
+
+.switch {
+  @include bg-btn;
+  display: inline-block;
+  border-radius: 50px;
+  width: 44px;
+  height: 24px;
+  position: relative;
+}

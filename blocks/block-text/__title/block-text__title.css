@@ -1,0 +1,11 @@
+.block-text__title {
+  margin: 0;
+  padding: 0;
+  color: var(--title-color);
+  opacity: 1;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  margin-top: 80px;
+}/*# sourceMappingURL=block-text__title.css.map */

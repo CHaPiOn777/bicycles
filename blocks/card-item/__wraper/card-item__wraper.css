@@ -1,0 +1,12 @@
+.card-item__wraper {
+  background-color: #F4F4F4;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 20px 140px rgba(0, 0, 0, 0.06);
+  max-width: 380px;
+  max-height: 380px;
+  border-radius: 20px;
+}
+
+.card-item:hover .card-item__wraper {
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=card-item__wraper.css.map */

@@ -1,0 +1,57 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin bg {
+  background-color: var(--bg);
+}
+@mixin bg-slider-btn {
+  background-color: var(--bg-slider-btn);
+}
+@mixin bg-btn {
+  background-color: var(--bg-btn);
+}
+@mixin bg-footer {
+  background-color: var(--bg-footer);
+}
+
+@mixin list {
+  @include reset;
+  list-style-type: none;
+}
+
+@mixin link {
+  @include reset;
+  @include title;
+  text-decoration: none;
+  transition: opacity .5s ease-in-out;
+
+  &:hover {
+    opacity: .75;
+  }
+}
+
+@mixin link-inactive {
+  @include reset;
+  text-decoration: none;
+  transition: opacity .5s ease-in-out;
+
+  &:hover {
+    opacity: .6;
+  }
+}
+
+@mixin title {
+  color: var(--title-color);
+  opacity: 1;
+}
+@mixin text {
+  color: var(--info-color);
+  opacity: .7;
+}
+
+@mixin drop-shadow {
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.2);
+}
+

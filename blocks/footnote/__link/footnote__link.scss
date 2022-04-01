@@ -1,0 +1,11 @@
+@import '../../../mixins/mixins.scss';
+
+.footnote__link {
+  @include reset;
+  @include title;
+  @include link;
+  cursor: url(../../../img/cursor.svg), pointer;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}

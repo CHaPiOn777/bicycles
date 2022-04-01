@@ -1,0 +1,12 @@
+@import '../../mixins/mixins';
+
+.footer {
+  @include bg-footer;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  padding: 80px 120px 60px 120px;
+  margin: auto;
+  transition: all .5s ease-in-out;
+}

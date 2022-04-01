@@ -1,0 +1,16 @@
+@import '../../../mixins/mixins';
+
+.footer__input-btn {
+  @include reset;
+  @include title;
+
+  cursor: url(../../../img/cursor.svg), pointer;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  margin-left: -52px;
+
+  z-index: 10;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}

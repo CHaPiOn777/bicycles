@@ -1,0 +1,10 @@
+@import '../../../mixins/mixins';
+
+.card-item__name {
+  @include link;
+  padding-top: 22px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 10px;
+}

@@ -1,0 +1,7 @@
+@import '../../mixins/mixins';
+
+.main-screen {
+  @include reset;
+  display: flex;
+  position: relative;
+}

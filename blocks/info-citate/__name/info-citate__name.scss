@@ -1,0 +1,10 @@
+@import '../../../mixins/mixins';
+
+.info-citate__name {
+  @include reset;
+  @include white-title;
+  margin-top: 262px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}

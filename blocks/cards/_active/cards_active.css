@@ -1,0 +1,6 @@
+.cards_active {
+  opacity: 1;
+  height: 100%;
+  visibility: visible;
+  transition: all 1s ease-in-out;
+}/*# sourceMappingURL=cards_active.css.map */

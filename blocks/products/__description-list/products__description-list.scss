@@ -1,0 +1,7 @@
+@import '../../../mixins/mixins';
+
+.products__description-list {
+  @include list;
+  display: flex;
+  gap: 40px;
+}

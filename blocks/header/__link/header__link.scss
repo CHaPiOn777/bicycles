@@ -1,0 +1,10 @@
+@import '../../../mixins/mixins';
+
+.header__link {
+  @include link;
+  cursor: url(../../../img/cursor.svg), pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 34px;
+}

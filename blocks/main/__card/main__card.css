@@ -1,0 +1,12 @@
+.main__card {
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.2);
+  background-color: #F4F4F4;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 350px;
+  bottom: 50px;
+  right: 370px;
+  width: 440px;
+  height: 300px;
+  border-radius: 20px;
+}/*# sourceMappingURL=main__card.css.map */

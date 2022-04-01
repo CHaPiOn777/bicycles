@@ -1,0 +1,7 @@
+.switch__checkbox {
+  display: none;
+}
+
+.switch__checkbox:checked ~ .switch__round::before {
+  transform: translateX(20px);
+}/*# sourceMappingURL=switch__checkbox.css.map */

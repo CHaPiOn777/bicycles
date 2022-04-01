@@ -1,0 +1,20 @@
+.switch__round {
+  cursor: url(../../../img/cursor.svg), pointer;
+  position: absolute;
+  width: 44px;
+  height: 24px;
+  top: 0;
+  left: 0;
+}
+
+.switch__round::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background-color: #24B47E;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
+}/*# sourceMappingURL=switch__round.css.map */

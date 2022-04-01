@@ -1,0 +1,14 @@
+@import '../../../mixins/mixins';
+
+.block-text__btn-text {
+  @include reset;
+  position: relative;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+
+  z-index: 2;
+}

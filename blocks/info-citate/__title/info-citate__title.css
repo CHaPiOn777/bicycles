@@ -1,0 +1,11 @@
+.info-citate__title {
+  margin: 0;
+  padding: 0;
+  color: var(--title-color);
+  opacity: 1;
+  max-width: 470px;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: -0.5px;
+}/*# sourceMappingURL=info-citate__title.css.map */

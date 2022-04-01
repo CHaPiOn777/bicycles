@@ -1,0 +1,16 @@
+.header__link {
+  margin: 0;
+  padding: 0;
+  color: var(--title-color);
+  opacity: 1;
+  text-decoration: none;
+  transition: opacity 0.5s ease-in-out;
+  cursor: url(../../../img/cursor.svg), pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 34px;
+}
+.header__link:hover {
+  opacity: 0.75;
+}/*# sourceMappingURL=header__link.css.map */

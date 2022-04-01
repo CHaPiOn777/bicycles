@@ -1,0 +1,9 @@
+@import '../../../mixins/mixins';
+
+.footer__info-name {
+  @include reset;
+  color: var(--myname);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}

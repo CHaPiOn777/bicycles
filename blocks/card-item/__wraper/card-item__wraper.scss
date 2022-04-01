@@ -1,0 +1,16 @@
+@import '../../../mixins/mixins';
+
+.card-item__wraper {
+  background-color: #F4F4F4;
+
+  transition: all .5s ease-in-out;
+  box-shadow: 0px 20px 140px rgba(0, 0, 0, 0.06);
+
+  max-width: 380px;
+  max-height: 380px;
+  border-radius: 20px;
+}
+
+.card-item:hover .card-item__wraper {
+  @include drop-shadow;
+}

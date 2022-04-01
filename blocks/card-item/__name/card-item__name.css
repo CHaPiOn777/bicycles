@@ -1,0 +1,16 @@
+.card-item__name {
+  margin: 0;
+  padding: 0;
+  color: var(--title-color);
+  opacity: 1;
+  text-decoration: none;
+  transition: opacity 0.5s ease-in-out;
+  padding-top: 22px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 10px;
+}
+.card-item__name:hover {
+  opacity: 0.75;
+}/*# sourceMappingURL=card-item__name.css.map */

@@ -1,0 +1,86 @@
+@import '../vendor/normalize.css';
+@import '../vendor/fonts.css';
+
+@import '../blocks/html/html.css';
+@import '../blocks/pages/pages.css';
+@import '../blocks/pages/_theme_black/pages_theme_black.css';
+
+@import '../blocks/header/header.css';
+@import '../blocks/header/__link/header__link.css';
+@import '../blocks/header/__list/header__list.css';
+
+
+@import '../blocks/block-text/block-text.css';
+@import '../blocks/block-text/__btn-text/block-text__btn-text.css';
+@import '../blocks/block-text/__btn/block-text__btn.css';
+@import '../blocks/block-text/__text/block-text__text.css';
+@import '../blocks/block-text/__title/block-text__title.css';
+@import '../blocks/block-text/__slider/block-text__slider.css';
+@import '../blocks/footnote/footnote.css';
+@import '../blocks/footnote/__line/footnote__line.css';
+@import '../blocks/footnote/__link/footnote__link.css';
+
+@import '../blocks/main/main.css';
+@import '../blocks/main-screen/main-screen.css';
+
+@import '../blocks/main/__card-img/main__card-img.css';
+@import '../blocks/main/__card/main__card.css';
+@import '../blocks/main/__img/main__img.css';
+@import '../blocks/info/info.css';
+@import '../blocks/info/__img/info__img.css';
+@import '../blocks/info-citate/info-citate.css';
+@import '../blocks/info-citate/__description/info-citate__description.css';
+@import '../blocks/info-citate/__name/info-citate__name.css';
+@import '../blocks/info-citate/__title/info-citate__title.css';
+
+@import '../blocks/container/container.css';
+@import '../blocks/container/__bottom/container__bottom.css';
+@import '../blocks/container/__top/container__top.css';
+
+@import '../blocks/slider/slider.css';
+@import '../blocks/slider/__btn-item/slider__btn-item.css';
+@import '../blocks/slider/__btn/slider__btn.css';
+@import '../blocks/slider/__img-item-icon/slider__img-item-icon.css';
+@import '../blocks/slider/__img/slider__img.css';
+@import '../blocks/btn-left/btn-left.css';
+@import '../blocks/btn-right/btn-right.css';
+
+@import '../blocks/products/products.css';
+@import '../blocks/products/__item/products__item.css';
+@import '../blocks/products/__description/products__description.css';
+@import '../blocks/products/__description-title/products__description-title.css';
+@import '../blocks/products/__description-list/products__description-list.css';
+@import '../blocks/products/__description-link/products__description-link.css';
+@import '../blocks/products/__description-link/_active/products__description-link_active.css';
+@import '../blocks/cards/cards.css';
+@import '../blocks/cards/_active/cards_active.css';
+@import '../blocks/card-item/card-item.css';
+@import '../blocks/card-item/__img-link/card-item__img-link.css';
+@import '../blocks/card-item/__img/card-item__img.css';
+@import '../blocks/card-item/__name/card-item__name.css';
+@import '../blocks/card-item/__wraper/card-item__wraper.css';
+
+@import '../blocks/trenning/trenning.css';
+@import '../blocks/trenning/__img/trenning__img.css';
+@import '../blocks/trenning/__links-item/trenning__links-item.css';
+@import '../blocks/trenning/__links/trenning__links.css';
+@import '../blocks/trenning/__title/trenning__title.css';
+
+@import '../blocks/footer/footer.css';
+@import '../blocks/footer/__icons-item-black/footer__icons-item-black.css';
+@import '../blocks/footer/__icons-item-white/footer__icons-item-white.css';
+@import '../blocks/footer/__icons/footer__icons.css';
+@import '../blocks/footer/__info-name/footer__info-name.css';
+@import '../blocks/footer/__info/footer__info.css';
+@import '../blocks/footer/__input-btn/footer__input-btn.css';
+@import '../blocks/footer/__input-email/footer__input-email.css';
+@import '../blocks/footer/__input/footer__input.css';
+@import '../blocks/footer/__title/footer__title.css';
+
+@import '../blocks/switch/switch.css';
+@import '../blocks/switch/__checkbox/switch__checkbox.css';
+@import '../blocks/switch/__round/switch__round.css';
+@import '../blocks/switch/__checkbox/switch__checkbox.css';
+@import '../blocks/switch/__round/switch__round.css';
+// @import '../blocks/main';
+@import '../proba.css';

@@ -1,0 +1,23 @@
+.pages {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  --myname: #CFCFCF;
+  --title-color: #151515;
+  --bg: #F4F4F4;
+  --bg-btn: #FFFFFF;
+  --info-color: #222222;
+  --bg-footer: #EFEFEF;
+  --bg-slider-btn: #EBEBEB;
+  --input-border: rgb(199, 199, 199, .5);
+  --input-border-active: rgb(199, 199, 199);
+  --arrow-left: url(../../img/left.svg);
+  --arrow-right: url(../../img/right.svg);
+  --icon-black: url(../../../img/Vectorblack-wt.svg);
+  --icon-white: url(../../../img/Vectorwhite-wt.svg);
+  position: relative;
+  font-family: "Inter", sans-serif;
+  max-width: 1440px;
+  margin: auto;
+  transition: all 0.5s ease-in-out;
+}/*# sourceMappingURL=pages.css.map */

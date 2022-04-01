@@ -1,0 +1,15 @@
+.pages_theme_black {
+  --myname: #565656;
+  --title-color: #FFFFFF;
+  --bg: #333333;
+  --bg-btn: #545454;
+  --info-color: #E6E6E6;
+  --bg-footer: #2F2F2F;
+  --bg-slider-btn: #434343;
+  --input-border: rgb(125, 125, 125, .5);
+  --input-border-active: #7D7D7D;
+  --arrow-left: url(../../img/Vectorarrow-left-bl.svg);
+  --arrow-right: url(../../img/Vectorarrow-right-bl.svg);
+  --icon-black: url(../../../img/Vectorblack-bl.svg);
+  --icon-white: url(../../../img/Vectorwhite-bl.svg);
+}/*# sourceMappingURL=pages_theme_black.css.map */

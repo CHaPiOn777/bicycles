@@ -1,0 +1,11 @@
+.block-text__btn-text {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  z-index: 2;
+}/*# sourceMappingURL=block-text__btn-text.css.map */

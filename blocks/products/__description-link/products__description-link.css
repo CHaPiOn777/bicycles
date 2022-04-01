@@ -1,0 +1,14 @@
+.products__description-link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: opacity 0.5s ease-in-out;
+  color: var(--info-color);
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+.products__description-link:hover {
+  opacity: 0.6;
+}/*# sourceMappingURL=products__description-link.css.map */

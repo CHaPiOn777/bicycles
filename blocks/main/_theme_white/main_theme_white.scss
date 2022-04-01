@@ -1,0 +1,5 @@
+@import '../../../mixins/mixins';
+
+.main_theme_white {
+  @include bg-white;
+}

@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 630px;
+  top: 76px;
+  width: 810px;
+  height: 856px;
+  padding: 347px 0 79px 0;
+  z-index: 10;
+  box-sizing: border-box;
+}/*# sourceMappingURL=container.css.map */

@@ -1,0 +1,8 @@
+.switch {
+  background-color: var(--bg-btn);
+  display: inline-block;
+  border-radius: 50px;
+  width: 44px;
+  height: 24px;
+  position: relative;
+}/*# sourceMappingURL=switch.css.map */

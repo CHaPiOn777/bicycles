@@ -1,0 +1,8 @@
+@import '../../mixins/mixins';
+
+.info-citate {
+  @include reset;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+}

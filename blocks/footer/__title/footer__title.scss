@@ -1,0 +1,11 @@
+@import '../../../mixins/mixins';
+
+.footer__title {
+  @include reset;
+  @include title;
+  max-width: 229px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}

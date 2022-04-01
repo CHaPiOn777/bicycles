@@ -1,0 +1,9 @@
+@import '../../../mixins/mixins';
+
+.products__description-link {
+  @include link-inactive;
+  @include text;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}

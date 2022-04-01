@@ -1,0 +1,7 @@
+@import '../../../mixins/mixins';
+
+.header__list {
+  @include list;
+  display: flex;
+  justify-content: flex-end;
+}
