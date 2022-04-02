@@ -13,3 +13,10 @@
   height: 300px;
   border-radius: 20px;
 }
+
+@media (max-width: 767px) {
+  .main__card {
+    width: 234px;
+    height: 160px;
+  }
+}

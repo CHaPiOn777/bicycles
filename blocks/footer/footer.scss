@@ -10,3 +10,11 @@
   margin: auto;
   transition: all .5s ease-in-out;
 }
+
+@media (max-width: 767px) {
+  .footer {
+    max-width: 320px;
+    overflow: hidden;
+    padding: 60px 18px 16px 18px;
+  }
+}

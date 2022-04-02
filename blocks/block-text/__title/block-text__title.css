@@ -4,8 +4,33 @@
   color: var(--title-color);
   opacity: 1;
   font-weight: 700;
-  font-size: 55px;
-  line-height: 60px;
+  grid-area: title;
   letter-spacing: -0.5px;
   margin-top: 80px;
+}
+@media (max-width: 767px) {
+  .block-text__title {
+    font-size: calc(32px + 39.1 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 767px) {
+  .block-text__title {
+    font-size: calc(32px + 23 * (100vw / 1440));
+  }
+}
+@media (max-width: 767px) {
+  .block-text__title {
+    line-height: calc(40px + 34 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 767px) {
+  .block-text__title {
+    line-height: calc(40px + 20 * (100vw / 1440));
+  }
+}
+
+@media (max-width: 767px) {
+  .block-text__title {
+    margin-top: 40px;
+  }
 }/*# sourceMappingURL=block-text__title.css.map */

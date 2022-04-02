@@ -2,10 +2,18 @@
 
 .block-text__title {
   @include reset;
-  @include white-title;
+  @include title;
+  @include adaptiv-font(55, 32);
+  @include adaptiv-line-height(60, 40);
   font-weight: 700;
-  font-size: 55px;
-  line-height: 60px;
+  grid-area: title;
+
   letter-spacing: -0.5px;
   margin-top: 80px;
+}
+
+@media (max-width: 767px) {
+  .block-text__title {
+    margin-top: 40px;
+  }
 }

@@ -1,4 +1,5 @@
 .pages {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: var(--bg);
@@ -20,4 +21,10 @@
   max-width: 1440px;
   margin: auto;
   transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .pages {
+    max-width: 767px;
+  }
 }/*# sourceMappingURL=pages.css.map */

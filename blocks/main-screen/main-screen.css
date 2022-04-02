@@ -1,6 +1,20 @@
 .main-screen {
   margin: 0;
   padding: 0;
-  display: flex;
-  position: relative;
-}/*# sourceMappingURL=main.css.map */
+  display: grid;
+  grid-template-columns: repeat(2, minmax(-webkit-min-content, -webkit-max-content));
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(5, minmax(-webkit-min-content, -webkit-max-content));
+  grid-template-rows: repeat(5, minmax(min-content, max-content));
+  grid-template-areas: "title img" "text img" "btn img" "ftn img" ". img";
+}
+
+@media (max-width: 767px) {
+  .main-screen {
+    grid-template-columns: repeat(1, minmax(-webkit-min-content, -webkit-max-content));
+    grid-template-columns: repeat(1, minmax(min-content, max-content));
+    grid-template-rows: repeat(4, minmax(-webkit-min-content, -webkit-max-content));
+    grid-template-rows: repeat(4, minmax(min-content, max-content));
+    grid-template-areas: "title" "img" "text" "btn";
+  }
+}/*# sourceMappingURL=main-screen.css.map */

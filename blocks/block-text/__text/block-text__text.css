@@ -3,9 +3,34 @@
   padding: 0;
   color: var(--info-color);
   opacity: 0.7;
+  grid-area: text;
   max-width: 460px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
   margin-top: 50px;
+}
+@media (max-width: 767px) {
+  .block-text__text {
+    font-size: calc(12px + 10.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 767px) {
+  .block-text__text {
+    font-size: calc(12px + 6 * (100vw / 1440));
+  }
+}
+@media (max-width: 767px) {
+  .block-text__text {
+    line-height: calc(18px + 17 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 767px) {
+  .block-text__text {
+    line-height: calc(18px + 10 * (100vw / 1440));
+  }
+}
+
+@media (max-width: 767px) {
+  .block-text__text {
+    margin-top: 40px;
+  }
 }/*# sourceMappingURL=block-text__text.css.map */

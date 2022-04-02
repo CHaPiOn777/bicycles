@@ -3,3 +3,9 @@
   align-items: center;
   padding-top: 167px;
 }
+
+@media (max-width: 767px) {
+  .footnote {
+    display: none;
+  }
+}

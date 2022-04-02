@@ -1,6 +1,8 @@
 @import '../../mixins/mixins';
 
 .pages {
+  box-sizing: border-box;
+
   @include reset;
   @include bg;
 
@@ -25,4 +27,10 @@
 
 
   transition: all .5s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .pages {
+    max-width: 767px;
+  }
 }

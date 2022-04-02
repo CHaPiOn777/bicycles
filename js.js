@@ -27,8 +27,10 @@ btnTheme.addEventListener('click', () => {
 inputHeader.oninput = function() {
   if (this.value === '') {
     btnInputHeader.style.opacity = '0';
+    btnInputHeader.style.visibility = 'hidden';
   } else {
     btnInputHeader.style.opacity = '1';
+    btnInputHeader.style.visibility = 'visible';
   }
 }
 function submitFormHandler (evt) {

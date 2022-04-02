@@ -2,10 +2,18 @@
 
 .block-text__text {
   @include reset;
-  @include white-text;
+  @include text;
+  @include adaptiv-font(18, 12);
+  @include adaptiv-line-height(28, 18);
+  grid-area: text;
+
   max-width: 460px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
   margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+  .block-text__text {
+    margin-top: 40px;
+  }
 }

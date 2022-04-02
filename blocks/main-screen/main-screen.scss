@@ -1,0 +1,27 @@
+@import '../../mixins/mixins';
+
+.main-screen {
+  @include reset;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(5, minmax(min-content, max-content));
+
+  grid-template-areas:
+  'title img'
+  'text img'
+  'btn img'
+  'ftn img'
+  '. img';
+}
+
+@media (max-width: 767px) {
+  .main-screen {
+    grid-template-columns: repeat(1, minmax(min-content, max-content));
+    grid-template-rows: repeat(4, minmax(min-content, max-content));
+    grid-template-areas:
+    'title'
+    'img'
+    'text'
+    'btn';
+  }
+}
