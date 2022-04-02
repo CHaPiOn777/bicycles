@@ -2,9 +2,15 @@
 
 .info-citate__description {
   @include reset;
-  @include white-text;
+  @include text;
+  @include adaptiv-font(16, 10);
+  @include adaptiv-line-height(28, 16);
   margin-top: 6px;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
+}
+
+@media (max-width: 767px) {
+  .info-citate__description {
+    margin-top: 4px;
+  }
 }

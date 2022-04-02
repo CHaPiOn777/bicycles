@@ -1,4 +1,9 @@
 .info__img {
-  max-width: 650px;
-  max-height: 460px;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .info__img {
+    max-width: calc(100vw - 36px);
+  }
 }/*# sourceMappingURL=info__img.css.map */

@@ -5,6 +5,30 @@
   opacity: 0.7;
   margin-top: 6px;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
+}
+@media (max-width: 767px) {
+  .info-citate__description {
+    font-size: calc(10px + 10.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 767px) {
+  .info-citate__description {
+    font-size: calc(10px + 6 * (100vw / 1440));
+  }
+}
+@media (max-width: 767px) {
+  .info-citate__description {
+    line-height: calc(16px + 20.4 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 767px) {
+  .info-citate__description {
+    line-height: calc(16px + 12 * (100vw / 1440));
+  }
+}
+
+@media (max-width: 767px) {
+  .info-citate__description {
+    margin-top: 4px;
+  }
 }/*# sourceMappingURL=info-citate__description.css.map */

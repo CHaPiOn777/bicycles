@@ -4,4 +4,11 @@
   padding-left: 80px;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .info-citate {
+    padding: 0;
+    margin-top: 40px;
+  }
 }/*# sourceMappingURL=info-citate.css.map */

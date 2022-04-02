@@ -5,6 +5,30 @@
   opacity: 1;
   margin-top: 262px;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 32px;
+}
+@media (max-width: 767px) {
+  .info-citate__name {
+    font-size: calc(14px + 10.2 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 767px) {
+  .info-citate__name {
+    font-size: calc(14px + 6 * (100vw / 1440));
+  }
+}
+@media (max-width: 767px) {
+  .info-citate__name {
+    line-height: calc(22px + 17 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 767px) {
+  .info-citate__name {
+    line-height: calc(22px + 10 * (100vw / 1440));
+  }
+}
+
+@media (max-width: 767px) {
+  .info-citate__name {
+    margin-top: 40px;
+  }
 }/*# sourceMappingURL=info-citate__name.css.map */

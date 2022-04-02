@@ -1,4 +1,17 @@
 .info {
   padding-top: 120px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(-webkit-min-content, -webkit-max-content));
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+}
+
+@media (max-width: 767px) {
+  .info {
+    padding-top: 20px;
+    border-top: 1px solid #E3E3E3;
+    grid-template-columns: repeat(1, minmax(-webkit-min-content, -webkit-max-content));
+    grid-template-columns: repeat(1, minmax(min-content, max-content));
+    grid-template-rows: repeat(2, minmax(-webkit-min-content, -webkit-max-content));
+    grid-template-rows: repeat(2, minmax(min-content, max-content));
+  }
 }/*# sourceMappingURL=info.css.map */

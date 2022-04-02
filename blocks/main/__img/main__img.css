@@ -1,7 +1,4 @@
 .main__img {
-  background-image: url(../../../img/main_img.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
   margin-left: 250px;
   margin-top: 20px;
   grid-area: img;
