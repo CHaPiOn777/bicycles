@@ -1,0 +1,10 @@
+@media (max-width: 1200px) {
+  .products__list-item {
+
+    padding: 6px 0 6px 12px;
+  }
+  .products__list-item:nth-of-type(1) {
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+  }
+}

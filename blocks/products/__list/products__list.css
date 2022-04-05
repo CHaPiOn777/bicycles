@@ -1,0 +1,14 @@
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+@media (max-width: 1200px) {
+  .products__list {
+    flex-direction: column;
+    gap: 15px;
+  }
+}/*# sourceMappingURL=products__list.css.map */

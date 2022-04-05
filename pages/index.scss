@@ -48,11 +48,16 @@
 
 @import '../blocks/products/products.css';
 @import '../blocks/products/__item/products__item.css';
-@import '../blocks/products/__description/products__description.css';
-@import '../blocks/products/__description-title/products__description-title.css';
-@import '../blocks/products/__description-list/products__description-list.css';
-@import '../blocks/products/__description-link/products__description-link.css';
-@import '../blocks/products/__description-link/_active/products__description-link_active.css';
+@import '../blocks/products/__navigation/products__navigation.css';
+@import '../blocks/products/__navigation/_active/products__navigation_active.css';
+@import '../blocks/products/__title/products__title.css';
+@import '../blocks/products/__list/products__list.css';
+@import '../blocks/products/__list-item/products__list-item.css';
+@import '../blocks/products/__link/products__link.css';
+@import '../blocks/products/__link/_active/products__link_active.css';
+@import '../blocks/products/__arrow/products__arrow.css';
+@import '../blocks/pagination/pagination.css';
+@import '../blocks/pagination/__item/pagination__item.css';
 @import '../blocks/cards/cards.css';
 @import '../blocks/cards/_active/cards_active.css';
 @import '../blocks/card-item/card-item.css';

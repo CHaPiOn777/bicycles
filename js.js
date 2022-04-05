@@ -7,7 +7,7 @@ const btnRight = document.querySelector('.btn-right'),
       sliderIcon = document.querySelector('.slider__img-item-icon'),
 
       products = document.querySelector('.products'),
-      linksSlider = document.querySelectorAll('.products__description-link'),
+      linksSlider = document.querySelectorAll('.products__link'),
       cardsSlider = document.querySelectorAll('.cards'),
 
       inputFooter = document.querySelector('.footer__input-email'),
@@ -15,10 +15,10 @@ const btnRight = document.querySelector('.btn-right'),
       body = document.querySelector('.pages'),
       btnTheme = document.querySelector('.switch__checkbox'),
 
-      navigation = document.querySelector('.products__description-navigation'),
-      arrowNav = document.querySelector('.products__description-img'),
-      navigationList = document.querySelector('.products__description-list'),
-      navListItem = document.querySelectorAll('.products__description-list-item');
+      navigation = document.querySelector('.products__navigation'),
+      arrowNav = document.querySelector('.products__arrow'),
+      navigationList = document.querySelector('.products__list'),
+      navListItem = document.querySelectorAll('.products__list-item');
 
 
 const blockSliderWidth = document.querySelector('.slider__img-item').offsetWidth;
@@ -53,9 +53,9 @@ function transformListItem () {
   for (let i = 0; i < navListItem.length; i++) {
     navListItem[i].addEventListener('click', () => {
       navigationList.prepend(navListItem[i]);
-      deleteAllClass(navListItem, 'products__description-link_active');
-      addClass(navListItem[0], 'products__description-link_active')
-      deleteClass(navigation, 'products__description-navigation_active');
+      deleteAllClass(navListItem, 'products__link_active');
+      addClass(navListItem[0], 'products__link_active')
+      deleteClass(navigation, 'products__navigation_active');
     });
 
   }
@@ -136,16 +136,16 @@ btnLeft.addEventListener('click', () => {
 
 for (let i = 0; i < linksSlider.length; i++) {
   linksSlider[i].addEventListener('click', () => {
-    deleteAllClass(linksSlider, 'products__description-link_active');
+    deleteAllClass(linksSlider, 'products__link_active');
     deleteAllClass(cardsSlider, 'cards_active');
     addClass(cardsSlider[i], 'cards_active');
-    addClass(linksSlider[i], 'products__description-link_active');
+    addClass(linksSlider[i], 'products__link_active');
   });
 }
 
-arrowNav.addEventListener('click', () => {
-  toggleClass(navigation, 'products__description-navigation_active');
+arrowNav.addEventListener('touchend', () => {
+  toggleClass(navigation, 'products__navigation_active');
   transformListItem();
-})
+}, false)
 
 btnInputFooter.addEventListener('click', submitFormHandler);

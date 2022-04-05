@@ -1,6 +1,6 @@
 @import '../../../../mixins/mixins';
 
-.products__description-link_active {
+.products__link_active {
   @include title;
   font-weight: 600;
   opacity: 1;

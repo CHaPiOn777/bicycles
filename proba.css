@@ -2,22 +2,6 @@
   display: none;
 }
 
-.products__description-img {
-  display: none;
-}
-
-@media (max-width: 1200px) {
-  .products__description-img {
-    border: solid #151515;
-    border-width: 0 1.5px 1.5px 0;
-    position: absolute;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-    top: 12px;
-    right: 13px;
-  }
-}
 @media (max-width: 1200px) {
   .pagination {
     display: flex;

@@ -1,0 +1,14 @@
+@import '../../../mixins/mixins';
+
+.products__list {
+  @include list;
+  display: flex;
+  gap: 40px;
+}
+
+@media (max-width: 1200px) {
+  .products__list {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

@@ -1,16 +1,18 @@
 @import '../../../mixins/mixins';
 
-.products__description-link {
+.products__link {
   @include link-inactive;
   @include text;
   @include adaptiv-font(18, 11);
   @include adaptiv-line-height(28, 14);
+  cursor: url(../../../img/cursor.svg), pointer;
   font-weight: 400;
 }
 
 
 @media (max-width: 1200px) {
-  .products__description-link {
+  .products__link {
     justify-self: center;
+    display: block;
   }
 }
