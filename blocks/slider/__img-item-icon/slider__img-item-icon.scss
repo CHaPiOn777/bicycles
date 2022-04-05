@@ -1,5 +1,21 @@
 .slider__img-item-icon {
+  transition: all .5s ease-in-out;
+  transition-delay: .2s;
+  background-image: url(../../../img/Shosse_icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 40px;
   position: absolute;
   left: 0;
-  top: 344px;
+  bottom: 16px;
 }
+
+@media (max-width: 768px) {
+  .slider__img-item-icon {
+    bottom: 14px;
+    width: 70px;
+    height: 28px;
+  }
+}
+

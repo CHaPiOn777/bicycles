@@ -32,5 +32,6 @@
 @media (max-width: 767px) {
   .block-text__text {
     margin-top: 40px;
+    width: calc(100vw - 36px);
   }
 }/*# sourceMappingURL=block-text__text.css.map */

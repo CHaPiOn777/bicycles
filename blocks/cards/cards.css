@@ -4,4 +4,10 @@
   height: 0;
   opacity: 0;
   visibility: hidden;
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    width: 320px;
+  }
 }/*# sourceMappingURL=cards.css.map */

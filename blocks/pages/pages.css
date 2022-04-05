@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   background-color: var(--bg);
+  --pagination: #cacaca;
   --myname: #CFCFCF;
   --title-color: #151515;
   --bg: #F4F4F4;
@@ -16,6 +17,8 @@
   --arrow-right: url(../../img/right.svg);
   --icon-black: url(../../../img/Vectorblack-wt.svg);
   --icon-white: url(../../../img/Vectorwhite-wt.svg);
+  --arrow-small-left: url(../../img/small-left.svg);
+  --arrow-small-right: url(../../img/small-right.svg);
   position: relative;
   font-family: "Inter", sans-serif;
   max-width: 1440px;

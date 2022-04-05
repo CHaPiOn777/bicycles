@@ -3,7 +3,14 @@
 .products__description-link {
   @include link-inactive;
   @include text;
+  @include adaptiv-font(18, 11);
+  @include adaptiv-line-height(28, 14);
   font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
+}
+
+
+@media (max-width: 1200px) {
+  .products__description-link {
+    justify-self: center;
+  }
 }

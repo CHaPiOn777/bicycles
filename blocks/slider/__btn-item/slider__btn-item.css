@@ -13,4 +13,17 @@
 
 .slider__btn-item:hover {
   opacity: 0.6;
+}
+
+@media (max-width: 767px) {
+  .slider__btn-item {
+    width: 36px;
+    height: 36px;
+  }
+}
+@media (max-width: 468px) {
+  .slider__btn-item {
+    width: 24px;
+    height: 24px;
+  }
 }/*# sourceMappingURL=slider__btn-item.css.map */

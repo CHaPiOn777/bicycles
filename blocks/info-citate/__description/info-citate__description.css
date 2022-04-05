@@ -27,7 +27,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1440px) {
   .info-citate__description {
     margin-top: 4px;
   }

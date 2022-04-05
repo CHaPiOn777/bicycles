@@ -5,3 +5,9 @@
   align-items: flex-end;
   padding-bottom: 120px;
 }
+
+@media (max-width: 1200px) {
+  .products__description {
+    flex-direction: column;
+  }
+}

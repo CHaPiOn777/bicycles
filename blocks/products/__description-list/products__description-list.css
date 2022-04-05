@@ -4,4 +4,42 @@
   list-style-type: none;
   display: flex;
   gap: 40px;
+}
+
+@media (max-width: 1200px) {
+  .products__description-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.products__description-navigation {
+  transition: all 0.5s ease-in-out;
+  align-self: end;
+}
+
+@media (max-width: 1200px) {
+  .products__description-navigation {
+    margin-top: 40px;
+    position: relative;
+    height: 34px;
+    width: 115px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+}
+@media (max-width: 1200px) {
+  .products__description-navigation_active {
+    overflow: visible;
+    transition: all 0.5s ease-in-out;
+  }
+}
+@media (max-width: 1200px) {
+  .products__description-list-item {
+    padding: 6px 0 6px 12px;
+  }
+
+  .products__description-list-item:nth-of-type(1) {
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+  }
 }/*# sourceMappingURL=products__description-list.css.map */

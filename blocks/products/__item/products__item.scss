@@ -1,4 +1,16 @@
 .products__item {
-  flex-direction: column;
-  margin-right: 120px;
+  display: flex;
+  padding-bottom: 120px;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .products__item {
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-areas:
+    'title'
+    'link'
+    'card';
+  }
 }

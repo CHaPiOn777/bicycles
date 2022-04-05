@@ -2,9 +2,25 @@
 
 .slider {
   @include reset;
-  display: flex;
+  overflow: hidden;
+  display: grid;
   position: relative;
-  padding-top: 40px;
-  transition: all .5s ease-in-out;
-  transform: translateX(0);
+  margin: 0 0 0 120px;
+
+  grid-template-areas:
+  'title'
+  'text'
+  'img'
+  'btn';
+}
+@media (max-width: 767px) {
+  .slider {
+    margin: 0 18px;
+    max-width: 767px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas:
+    'title btn'
+    'img img'
+    'text text';
+  }
 }

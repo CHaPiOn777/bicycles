@@ -1,7 +1,9 @@
 .main-screen {
   margin: 0;
   padding: 0;
+  padding: 0 0 0 120px;
   display: grid;
+  overflow: hidden;
   grid-template-columns: repeat(2, minmax(-webkit-min-content, -webkit-max-content));
   grid-template-columns: repeat(2, minmax(min-content, max-content));
   grid-template-rows: repeat(5, minmax(-webkit-min-content, -webkit-max-content));
@@ -11,7 +13,7 @@
 
 @media (max-width: 767px) {
   .main-screen {
-    padding-bottom: 80px;
+    padding: 0 18px 80px 18px;
     grid-template-columns: repeat(1, minmax(-webkit-min-content, -webkit-max-content));
     grid-template-columns: repeat(1, minmax(min-content, max-content));
     grid-template-rows: repeat(4, minmax(-webkit-min-content, -webkit-max-content));

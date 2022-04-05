@@ -3,3 +3,8 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
+@media (max-width: 767px) {
+  .btn-right {
+    background-image: var(--arrow-small-right);
+  }
+}

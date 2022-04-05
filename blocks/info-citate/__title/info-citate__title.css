@@ -3,26 +3,29 @@
   padding: 0;
   color: var(--title-color);
   opacity: 1;
+  font-size: 34px;
+  line-height: 44px;
   max-width: 470px;
   font-weight: 600;
   letter-spacing: -0.5px;
 }
-@media (max-width: 767px) {
+
+@media (max-width: 1200px) and (max-width: 767px) {
   .info-citate__title {
     font-size: calc(23px + 18.7 * ((100vw - 320px) / 1440));
   }
 }
-@media (min-width: 767px) {
+@media (max-width: 1200px) and (min-width: 767px) {
   .info-citate__title {
     font-size: calc(23px + 11 * (100vw / 1440));
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1200px) and (max-width: 767px) {
   .info-citate__title {
     line-height: calc(29px + 25.5 * ((100vw - 320px) / 1440));
   }
 }
-@media (min-width: 767px) {
+@media (max-width: 1200px) and (min-width: 767px) {
   .info-citate__title {
     line-height: calc(29px + 15 * (100vw / 1440));
   }

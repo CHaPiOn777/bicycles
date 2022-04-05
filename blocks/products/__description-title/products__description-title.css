@@ -4,8 +4,26 @@
   color: var(--title-color);
   opacity: 1;
   font-weight: 700;
-  font-size: 55px;
-  line-height: 60px;
   letter-spacing: -0.5px;
   margin-top: 120px;
+}
+@media (max-width: 767px) {
+  .products__description-title {
+    font-size: calc(32px + 39.1 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 767px) {
+  .products__description-title {
+    font-size: calc(32px + 23 * (100vw / 1440));
+  }
+}
+@media (max-width: 767px) {
+  .products__description-title {
+    line-height: calc(40px + 34 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 767px) {
+  .products__description-title {
+    line-height: calc(40px + 20 * (100vw / 1440));
+  }
 }/*# sourceMappingURL=products__description-title.css.map */

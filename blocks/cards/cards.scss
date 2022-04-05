@@ -5,3 +5,8 @@
   opacity: 0;
   visibility: hidden;
 }
+@media (max-width: 1200px) {
+  .cards {
+    width: 320px;
+  }
+}

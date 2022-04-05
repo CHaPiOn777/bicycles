@@ -2,4 +2,10 @@
   background-image: var(--arrow-left);
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+@media (max-width: 767px) {
+  .btn-left {
+    background-image: var(--arrow-small-left);
+  }
 }/*# sourceMappingURL=btn-left.css.map */

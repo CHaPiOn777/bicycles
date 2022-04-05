@@ -7,10 +7,35 @@
   transition: opacity 0.5s ease-in-out;
   padding-top: 22px;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
   padding-left: 10px;
 }
 .card-item__name:hover {
   opacity: 0.75;
+}
+@media (max-width: 767px) {
+  .card-item__name {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 767px) {
+  .card-item__name {
+    font-size: calc(14px + 4 * (100vw / 1440));
+  }
+}
+@media (max-width: 767px) {
+  .card-item__name {
+    line-height: calc(18px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 767px) {
+  .card-item__name {
+    line-height: calc(18px + 4 * (100vw / 1440));
+  }
+}
+
+@media (max-width: 1200px) {
+  .card-item__name {
+    padding: 3px 0 16px 0;
+    text-align: center;
+  }
 }/*# sourceMappingURL=card-item__name.css.map */

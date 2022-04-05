@@ -1,0 +1,9 @@
+.slider__img-item {
+  padding-right: 40px;
+}
+
+@media (max-width: 768px) {
+  .slider__img-item {
+    max-width: calc(100vw - 36px);
+  }
+}/*# sourceMappingURL=slider__img-item.css.map */

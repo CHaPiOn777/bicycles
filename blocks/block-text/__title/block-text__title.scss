@@ -5,6 +5,7 @@
   @include title;
   @include adaptiv-font(55, 32);
   @include adaptiv-line-height(60, 40);
+
   font-weight: 700;
   grid-area: title;
 
@@ -15,5 +16,6 @@
 @media (max-width: 767px) {
   .block-text__title {
     margin-top: 40px;
+    width: calc(100vw - 36px);
   }
 }
