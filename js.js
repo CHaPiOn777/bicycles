@@ -1,3 +1,4 @@
+
 const btnRight = document.querySelector('.btn-right'),
       btnLeft = document.querySelector('.btn-left'),
       sliderContent = document.querySelector('.slider'),
@@ -8,7 +9,6 @@ const btnRight = document.querySelector('.btn-right'),
 
       products = document.querySelector('.products'),
       linksSlider = document.querySelectorAll('.products__link'),
-      cardsSlider = document.querySelectorAll('.cards'),
 
       inputFooter = document.querySelector('.footer__input-email'),
       btnInputFooter = document.querySelector('.footer__input-btn'),
@@ -18,11 +18,88 @@ const btnRight = document.querySelector('.btn-right'),
       navigation = document.querySelector('.products__navigation'),
       arrowNav = document.querySelector('.products__arrow'),
       navigationList = document.querySelector('.products__list'),
-      navListItem = document.querySelectorAll('.products__list-item');
+      navListItem = document.querySelectorAll('.products__list-item'),
 
+      cardsSlider = document.querySelectorAll('.cards'),
+      cardsSliderOne = document.querySelector('.cards'),
+      cardItem = document.querySelector('.card-item');
+
+
+// document.addEventListener('mousemove', swipeAction, false);
+// document.addEventListener('mouseup', swipeEnd, false);
 
 const blockSliderWidth = document.querySelector('.slider__img-item').offsetWidth;
 let position = 0;
+
+let posInit = 0,
+    trfRegExp = /[-0-9.]+(?=px)/,
+    posX1 = 0,
+    posX2 = 0,
+    posFinal = 0,
+    slideWidth = cardItem.offsetWidth,
+    slideIndex = 0,
+    posThreshold = slideWidth * .35,
+    slide = function() {
+      if (cardsSliderOne.style.transition) {
+        cardsSliderOne.style.transition = 'transform .5s';
+      }
+      cardsSliderOne.style.transform = `translateX(-${slideIndex * (slideWidth + 30)}px)`;
+    };
+
+let getEvent = function () {
+  return event.changedTouches[0] !== -1 ? event.changedTouches[0] : event;
+}
+let swipeStart = function() {
+  let touch = getEvent();
+
+  posInit = posX1 = touch.clientX;
+  cardItem.style.transition = '';
+
+
+  cardsSliderOne.addEventListener('touchmove', swipeAction);
+  cardsSliderOne.addEventListener('touchend', swipeEnd);
+
+}
+
+
+let swipeAction = function() {
+  let touch = getEvent(),
+  style = cardItem.style.transform;
+  transform = +style.match(trfRegExp);
+
+  posX2 = posX1 - touch.clientX;
+  posX1 = touch.clientX;
+
+  cardsSliderOne.style.transform = `translateX(${transform - posX2}px)`;
+}
+swipeEnd = function() {
+  // финальная позиция курсора
+  posFinal = posInit - posX1;
+
+  cardsSliderOne.removeEventListener('touchmove', swipeAction);
+  cardsSliderOne.removeEventListener('touchend', swipeEnd);
+
+  // убираем знак минус и сравниваем с порогом сдвига слайда
+  if (Math.abs(posFinal) > posThreshold) {
+    // если мы тянули вправо, то уменьшаем номер текущего слайда
+    if (posInit < posX1) {
+      slideIndex--;
+    // если мы тянули влево, то увеличиваем номер текущего слайда
+    } else if (posInit > posX1) {
+      slideIndex++;
+    }
+  }
+
+  // если курсор двигался, то запускаем функцию переключения слайдов
+  if (posInit !== posX1) {
+    slide();
+  }
+
+};
+cardsSliderOne.style.transform = 'translateX(0px)';
+
+cardsSliderOne.addEventListener('touchstart', swipeStart);
+cardsSliderOne.addEventListener('mousedown', swipeStart);
 
 function submitFormHandler (evt) {
   evt.preventDefault();

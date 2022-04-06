@@ -8,5 +8,7 @@
 @media (max-width: 1200px) {
   .cards {
     width: 320px;
+    transition: all .5s ease-in-out;
+    transform: translateX(0);
   }
 }
