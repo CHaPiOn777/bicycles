@@ -1,6 +1,9 @@
 .slider__img-item-icon {
   transition: all .5s ease-in-out;
   transition-delay: .2s;
+  -webkit-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  -moz-transition-delay: .2s;
   background-image: url(../../../img/Shosse_icon.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,6 +12,7 @@
   position: absolute;
   left: 0;
   bottom: 16px;
+  z-index: 10;
 }
 
 @media (max-width: 768px) {
