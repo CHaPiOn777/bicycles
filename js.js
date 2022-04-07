@@ -28,7 +28,7 @@ const btnRight = document.querySelector('.btn-right'),
 // document.addEventListener('mousemove', swipeAction, false);
 // document.addEventListener('mouseup', swipeEnd, false);
 
-let blockSliderWidth = document.querySelector('.slider__img-item').offsetWidth;
+let blockSliderWidth = document.querySelector('.img-item').offsetWidth;
 let position = 0;
 
 let posInit = 0,
@@ -47,7 +47,7 @@ let posInit = 0,
     };
 
 let getEvent = function () {
-  return event.changedTouches[0] !== -1 ? event.changedTouches[0] : event;
+  return TouchEvent.changedTouches !== -1 ? TouchEvent.changedTouches[0] : TouchEvent;
 }
 let swipeStart = function() {
   let touch = getEvent();
@@ -66,6 +66,7 @@ let swipeAction = function() {
   style = cardItem.style.transform;
   transform = +style.match(trfRegExp);
 
+  console.log(touch, posX2, posX1);
   posX2 = posX1 - touch.clientX;
   posX1 = touch.clientX;
 
@@ -200,12 +201,14 @@ function swipeSlider () {
 
 //***********
 btnRight.addEventListener('click', () => {
+  blockSliderWidth = document.querySelector('.img-item').offsetWidth;
   position -= blockSliderWidth;
   swipeSlider();
 })
 
 
 btnLeft.addEventListener('click', () => {
+  blockSliderWidth = document.querySelector('.img-item').offsetWidth;
   position += blockSliderWidth;
   swipeSlider();
 })
