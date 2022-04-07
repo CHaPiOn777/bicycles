@@ -4,12 +4,12 @@
   height: 0;
   opacity: 0;
   visibility: hidden;
-
 }
 
 @media (max-width: 1200px) {
   .cards {
-
     width: 320px;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0);
   }
 }/*# sourceMappingURL=cards.css.map */

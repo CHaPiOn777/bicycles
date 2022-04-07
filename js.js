@@ -28,7 +28,7 @@ const btnRight = document.querySelector('.btn-right'),
 // document.addEventListener('mousemove', swipeAction, false);
 // document.addEventListener('mouseup', swipeEnd, false);
 
-const blockSliderWidth = document.querySelector('.slider__img-item').offsetWidth;
+let blockSliderWidth = document.querySelector('.slider__img-item').offsetWidth;
 let position = 0;
 
 let posInit = 0,
@@ -54,7 +54,6 @@ let swipeStart = function() {
 
   posInit = posX1 = touch.clientX;
   cardItem.style.transition = '';
-
 
   cardsSliderOne.addEventListener('touchmove', swipeAction);
   cardsSliderOne.addEventListener('touchend', swipeEnd);
@@ -194,7 +193,7 @@ function swipeSlider () {
     градиентах: будь то&nbsp;горы или равнины. Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться
     можно и&nbsp;самостоятельно.`);
     sliderIcon.style.left = `${-position}px`;
-    sliderIcon.style.backgroundImage = 'url(./img/shosse_icon.svg)';
+    sliderIcon.style.backgroundImage = 'url(./img/Shosse_icon.svg)';
   }
   setPosition();
 }
