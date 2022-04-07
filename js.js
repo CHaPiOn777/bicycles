@@ -219,6 +219,18 @@ function swipeSlider () {
   setPosition();
 }
 
+function transforArrow() {
+  if (arrowNav.style.transform) {
+    arrowNav.style.transform += `rotate(180deg)`;
+  } else {
+    arrowNav.style.transform += `rotate(225deg)`;
+  }
+  if ((arrowNav.style.top === '13px')) {
+    arrowNav.style.top = '9px';
+  } else {
+    arrowNav.style.top = '13px';
+  }
+}
 //***********
 btnRight.addEventListener('click', () => {
   blockSliderWidth = document.querySelector('.img-item').offsetWidth;
@@ -245,15 +257,7 @@ for (let i = 0; i < linksSlider.length; i++) {
     acticatePagination(0);
   });
 }
-function transforArrow() {
-  if (arrowNav.style.transform) {
-    arrowNav.style.transform += `rotate(180deg)`;
-    arrowNav.style.top += `13px`;
-  } else {
-    arrowNav.style.transform += `rotate(225deg)`;
-    arrowNav.style.top = `9px`;
-  }
-}
+
 arrowNav.addEventListener('touchend', () => {
   toggleClass(navigation, 'products__navigation_active');
   transformListItem();

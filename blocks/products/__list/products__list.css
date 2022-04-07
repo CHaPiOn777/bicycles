@@ -8,6 +8,7 @@
 
 @media (max-width: 1200px) {
   .products__list {
+    background-color: var(--bg);
     flex-direction: column;
     gap: 10px;
   }

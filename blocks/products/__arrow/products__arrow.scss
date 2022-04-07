@@ -4,15 +4,14 @@
 }
 @media (max-width: 1200px) {
   .products__arrow {
-    border: solid #151515;
+    border: solid var(--title-color);
     border-width: 0 1.5px 1.5px 0;
     position: absolute;
     display: inline-block;
     padding: 3px;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
     transform: rotate(45deg);
     top: 9px;
     right: 13px;
-
   }
 }
