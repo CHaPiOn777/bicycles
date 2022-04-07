@@ -3,8 +3,4 @@
   background-color: var(--pagination);
   width: 4px;
   height: 4px;
-}
-
-.pagination__item_active {
-  background-color: var(--title-color);
 }/*# sourceMappingURL=pagination__item.css.map */

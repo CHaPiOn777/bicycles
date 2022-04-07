@@ -19,10 +19,13 @@ const btnRight = document.querySelector('.btn-right'),
       arrowNav = document.querySelector('.products__arrow'),
       navigationList = document.querySelector('.products__list'),
       navListItem = document.querySelectorAll('.products__list-item'),
+      productsItem = document.querySelector('.products__item'),
 
       cardsSlider = document.querySelectorAll('.cards'),
-      cardsSliderOne = document.querySelector('.cards'),
-      cardItem = document.querySelector('.card-item');
+
+      cardItem = document.querySelector('.card-item'),
+
+      pagination = document.querySelectorAll('.pagination__item');
 
 
 // document.addEventListener('mousemove', swipeAction, false);
@@ -32,6 +35,7 @@ let blockSliderWidth = document.querySelector('.img-item').offsetWidth;
 let position = 0;
 
 let posInit = 0,
+    cardsSliderOne = document.querySelector('.cards'),
     trfRegExp = /[-0-9.]+(?=px)/,
     posX1 = 0,
     posX2 = 0,
@@ -40,20 +44,31 @@ let posInit = 0,
     slideIndex = 0,
     posThreshold = slideWidth * .35,
     slide = function() {
-      if (cardsSliderOne.style.transition) {
+      if (!cardsSliderOne.style.transition) {
         cardsSliderOne.style.transition = 'transform .5s';
       }
+      if (slideIndex < 0) {
+        slideIndex = 0;
+      }
+      if (slideIndex > 2) {
+        slideIndex = 2;
+      }
       cardsSliderOne.style.transform = `translateX(-${slideIndex * (slideWidth + 30)}px)`;
+      acticatePagination(slideIndex);
     };
 
-let getEvent = function () {
-  return TouchEvent.changedTouches !== -1 ? TouchEvent.changedTouches[0] : TouchEvent;
+function acticatePagination (index) {
+  deleteAllClass(pagination, 'pagination__item_active');
+  addClass(pagination[index], 'pagination__item_active');
 }
-let swipeStart = function() {
-  let touch = getEvent();
+let swipeStart = function(evt) {
+  evt.preventDefault();
+  evt.stopPropagation();
+  let touch = evt.changedTouches[0].pageX;
 
-  posInit = posX1 = touch.clientX;
-  cardItem.style.transition = '';
+  posInit = posX1 = touch;
+  cardsSliderOne.style.transition = '';
+
 
   cardsSliderOne.addEventListener('touchmove', swipeAction);
   cardsSliderOne.addEventListener('touchend', swipeEnd);
@@ -61,16 +76,17 @@ let swipeStart = function() {
 }
 
 
-let swipeAction = function() {
-  let touch = getEvent(),
-  style = cardItem.style.transform;
+let swipeAction = function(evt) {
+  evt.preventDefault();
+  evt.stopPropagation();
+  let touch = evt.changedTouches[0].pageX,
+  style = cardsSliderOne.style.transform,
   transform = +style.match(trfRegExp);
 
-  console.log(touch, posX2, posX1);
-  posX2 = posX1 - touch.clientX;
-  posX1 = touch.clientX;
+  posX2 = posX1 - touch;
+  posX1 = touch;
+  cardsSliderOne.style.transform = `translateX(${transform - posX2/2}px)`;
 
-  cardsSliderOne.style.transform = `translateX(${transform - posX2}px)`;
 }
 swipeEnd = function() {
   // финальная позиция курсора
@@ -80,6 +96,7 @@ swipeEnd = function() {
   cardsSliderOne.removeEventListener('touchend', swipeEnd);
 
   // убираем знак минус и сравниваем с порогом сдвига слайда
+
   if (Math.abs(posFinal) > posThreshold) {
     // если мы тянули вправо, то уменьшаем номер текущего слайда
     if (posInit < posX1) {
@@ -96,10 +113,13 @@ swipeEnd = function() {
   }
 
 };
+
 cardsSliderOne.style.transform = 'translateX(0px)';
 
+
 cardsSliderOne.addEventListener('touchstart', swipeStart);
-cardsSliderOne.addEventListener('mousedown', swipeStart);
+
+// cardsSliderOne.addEventListener('mousedown', swipeStart);
 
 function submitFormHandler (evt) {
   evt.preventDefault();
@@ -219,12 +239,25 @@ for (let i = 0; i < linksSlider.length; i++) {
     deleteAllClass(cardsSlider, 'cards_active');
     addClass(cardsSlider[i], 'cards_active');
     addClass(linksSlider[i], 'products__link_active');
+    cardsSliderOne = document.querySelector('.cards_active');
+    cardsSliderOne.style.transform = 'translateX(0px)';
+    cardsSliderOne.addEventListener('touchstart', swipeStart);
+    acticatePagination(0);
   });
 }
-
+function transforArrow() {
+  if (arrowNav.style.transform) {
+    arrowNav.style.transform += `rotate(180deg)`;
+    arrowNav.style.top += `13px`;
+  } else {
+    arrowNav.style.transform += `rotate(225deg)`;
+    arrowNav.style.top = `9px`;
+  }
+}
 arrowNav.addEventListener('touchend', () => {
   toggleClass(navigation, 'products__navigation_active');
   transformListItem();
+  transforArrow();
 }, false)
 
 btnInputFooter.addEventListener('click', submitFormHandler);

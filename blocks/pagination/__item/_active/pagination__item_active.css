@@ -1,0 +1,4 @@
+.pagination__item_active {
+  background-color: var(--title-color);
+  transition: all 0.5s ease-in-out;
+}/*# sourceMappingURL=pagination__item_active.css.map */

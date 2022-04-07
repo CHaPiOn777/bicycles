@@ -9,8 +9,10 @@
     position: absolute;
     display: inline-block;
     padding: 3px;
+    transition: all .5s ease-in-out;
     transform: rotate(45deg);
     top: 9px;
     right: 13px;
+
   }
 }

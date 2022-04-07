@@ -9,5 +9,6 @@
     height: 34px;
     width: 115px;
     overflow: hidden;
+    z-index: 5;
   }
 }/*# sourceMappingURL=products__navigation.css.map */
