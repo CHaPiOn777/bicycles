@@ -3,9 +3,5 @@
   box-sizing: border-box;
   transition: all .5s ease-in-out;
   scroll-behavior: smooth;
-  // overflow: hidden;
-}
-@media (max-width: 767px) {
-  .main {
-  }
+  position: relative;
 }

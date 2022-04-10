@@ -2,7 +2,7 @@
   display: none;
   z-index: 10;
 }
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   .products__arrow {
     border: solid var(--title-color);
     border-width: 0 1.5px 1.5px 0;
@@ -13,5 +13,13 @@
     transform: rotate(45deg);
     top: 9px;
     right: 13px;
+  }
+  .products__arrow::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -3px;
+    right: -8px;
   }
 }

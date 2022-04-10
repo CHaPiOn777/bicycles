@@ -1,6 +1,17 @@
 .pagination__item {
   border-radius: 25px;
   background-color: var(--pagination);
-  width: 4px;
-  height: 4px;
+}
+
+@media (max-width: 1200px) {
+  .pagination__item {
+    width: 6px;
+    height: 6px;
+  }
+}
+@media (max-width: 767px) {
+  .pagination__item {
+    width: 4px;
+    height: 4px;
+  }
 }/*# sourceMappingURL=pagination__item.css.map */

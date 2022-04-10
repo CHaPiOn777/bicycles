@@ -1,1 +1,1 @@
-{"version":3,"sources":["slider.scss","../../mixins/mixins.scss","slider.css"],"names":[],"mappings":"AAEA;ECsBE,SAAA;EACA,UAAA;EDrBA,gBAAA;EACA,aAAA;EACA,kBAAA;EACA,mBAAA;EAEA,+CACA;AEFF;;AFOA;EACE;IACE,cAAA;IACA,gBAAA;IACA,qCAAA;IACA,sDACA;EELF;AACF","file":"slider.css"}
+{"version":3,"sources":["slider.scss","../../mixins/mixins.scss","slider.css"],"names":[],"mappings":"AAEA;ECsBE,SAAA;EACA,UAAA;EDrBA,gBAAA;EACA,aAAA;EACA,kBAAA;EACA,sBAAA;EAEA,+CACA;AEFF;;AFOA;EACE;IACE,wBAAA;IACA,gBAAA;IACA,qCAAA;IACA,sDACA;EELF;AACF","file":"slider.css"}

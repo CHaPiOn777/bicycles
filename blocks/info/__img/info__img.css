@@ -4,6 +4,8 @@
 
 @media (max-width: 1200px) {
   .info__img {
+    border-top: 1px solid var(--border-line);
+    padding-top: 20px;
     max-width: calc(100vw - 36px);
   }
 }/*# sourceMappingURL=info__img.css.map */

@@ -15,13 +15,13 @@
   opacity: 0.6;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .slider__btn-item {
     width: 36px;
     height: 36px;
   }
 }
-@media (max-width: 468px) {
+@media (max-width: 480px) {
   .slider__btn-item {
     width: 24px;
     height: 24px;

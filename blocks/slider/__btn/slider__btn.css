@@ -6,9 +6,10 @@
   align-items: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .slider__btn {
     justify-content: flex-end;
+    align-items: end;
     gap: 10px;
   }
 }/*# sourceMappingURL=slider__btn.css.map */

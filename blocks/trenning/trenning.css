@@ -1,5 +1,19 @@
 .trenning {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  padding: 80px 120px 120px 120px;
+  grid-template-areas: "title img" "text img" "link img";
   justify-content: space-between;
-  padding: 0 120px 120px 120px;
+}
+
+@media (max-width: 1200px) {
+  .trenning {
+    grid-template-areas: "title" "img" "text" "link";
+  }
+}
+@media (max-width: 768px) {
+  .trenning {
+    padding: 0 18px 60px 18px;
+  }
 }/*# sourceMappingURL=trenning.css.map */

@@ -2,11 +2,11 @@
   align-self: end;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   .products__navigation {
     margin-top: 40px;
     position: relative;
-    height: 34px;
+    height: 36px;
     width: 115px;
     overflow: hidden;
     z-index: 5;

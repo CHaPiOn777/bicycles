@@ -11,29 +11,36 @@
 
 <body class="pages">
   <header class="header">
-    <nav class="navigation">
+    <div class="header__burger">
+      <span class="header__burger-item"></span>
+    </div>
+    <nav class="header__navigation">
       <ul class="header__list">
         <li><a href="#slider" class="header__link">Покрытия и градиенты</a></li>
         <li><a href="#products" class="header__link">Велосипеды</a></li>
         <li><a href="#trenning" class="header__link">Тренировки</a></li>
+        <div class="header__icons">
+          <div class="header__icons-item-white"></div>
+          <label class="switch">
+            <input class="switch__checkbox" type="checkbox">
+            <span class="switch__round"></span>
+          </label>
+          <div class="header__icons-item-black"></div>
+        </div>
       </ul>
+
     </nav>
   </header>
-  <!-- <div class="container">
-    <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
-      class="main__card" target="_blank">
-      <img src="./img/велосипед_на_гл_экране.png" alt="Велосипед" class="main__card-img">
-    </a>
-  </div> -->
 
 
   <main class="main">
+
     <section class="main-screen">
-      <h1 class="block-text__title">Шоссе,&nbsp;ТТ и&nbsp;Грэвел</h1>
-      <p class="block-text__text">Триатлонные старты, горные серпантины или грейвел заезды по&nbsp;живописным
+      <h1 class="title main-screen__title">Шоссе,&nbsp;ТТ и&nbsp;Грэвел</h1>
+      <p class="text">Триатлонные старты, горные серпантины или грейвел заезды по&nbsp;живописным
         маршрутам&nbsp;&mdash; нужно только определиться с&nbsp;выбором велосипеда и&nbsp;отправиться в&nbsp;путь.</p>
-      <a href="#slider" class="block-text__btn">
-        <p class="block-text__btn-text">Подробнее</p>
+      <a href="#slider" class="main-screen__btn">
+        <p class="main-screen__btn-text">Подробнее</p>
       </a>
       <div class="footnote">
         <a target="_blank"
@@ -41,7 +48,14 @@
           class="footnote__link">Cannondale Systemsix</a>
         <div class="footnote__line"></div>
       </div>
-      <img src="./img/main_img.jpg" alt="Изображение дороги в лесу" class="main__img">
+      <div class="main__img">
+        <div class="container">
+          <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
+            class="main__card" target="_blank">
+          </a>
+        </div>
+      </div>
+
     </section>
 
     <section class="info">
@@ -55,8 +69,8 @@
     </section>
 
     <section class="slider" id="slider">
-      <h2 class="block-text__title">Шоссе</h2>
-      <p class="block-text__text">На&nbsp;шоссейном велосипеде можно ездить по асфальту на&nbsp;разных
+      <h2 class="title">Шоссе</h2>
+      <p class="text">На&nbsp;шоссейном велосипеде можно ездить по асфальту на&nbsp;разных
         градиентах: будь то&nbsp;горы или равнины. Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться
         можно и&nbsp;самостоятельно.</p>
       <div class="slider__img">
@@ -72,11 +86,9 @@
       </div>
     </section>
 
-
-
     <section class="products" id="products">
       <div class="products__item products__item-highway">
-        <h2 class="products__title">Велосипеды</h2>
+        <h2 class="title">Велосипеды</h2>
         <nav class="products__navigation">
           <ul class="products__list">
             <li class="products__list-item">
@@ -193,19 +205,17 @@
       </div>
     </section>
 
-    <!-- <section class="trenning" id="trenning">
-      <div class="block-text">
-        <h1 class="block-text__title trenning__title">Тренировки</h1>
-        <p class="block-text__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot,
+    <section class="trenning" id="trenning">
+        <h1 class="title trenning__title">Тренировки</h1>
+        <p class="text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot,
           а&nbsp;записать эти тренировки поможет приложение Strava, а&nbsp;также это приложение позволит построить
           тренировочный план.</p>
         <div class="trenning__links">
           <a target="_blank" href="https://www.strava.com" class="trenning__links-item">Strava</a>
           <a target="_blank" href="https://www.komoot.com" class="trenning__links-item">Komoot</a>
         </div>
-      </div>
       <img src="./img/Тренировки.jpg" alt="Изображение дороги в лесу" class="trenning__img">
-    </section> -->
+    </section>
   </main>
 
   <footer class="footer">
@@ -219,6 +229,7 @@
     </form>
     <div class="footer__info">
       <p class="footer__info-name">&#169; Шишкин Владислав 2022</p>
+      <div class="footer__icons-small"></div>
       <div class="footer__icons">
         <div class="footer__icons-item-white"></div>
         <label class="switch">

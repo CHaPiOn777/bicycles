@@ -6,4 +6,12 @@
   top: 0;
   z-index: 100;
   transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0;
+    height: 74px;
+    width: 100vw;
+  }
 }/*# sourceMappingURL=header.css.map */

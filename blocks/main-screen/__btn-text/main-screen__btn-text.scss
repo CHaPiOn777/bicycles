@@ -1,0 +1,14 @@
+@import '../../../mixins/mixins';
+
+.main-screen__btn-text {
+  @include reset;
+  @include adaptiv-font(14, 13);
+  @include adaptiv-line-height(18, 19);
+  position: relative;
+
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+
+  z-index: 2;
+}

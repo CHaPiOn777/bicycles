@@ -1,12 +1,12 @@
 .products {
   transition: all .5s ease-in-out;
   overflow: hidden;
-  padding: 0 120px 130px 120px;
+  padding: 0 120px 174px 120px;
 }
 
 @media (max-width: 768px) {
   .products {
-    padding: 0 18px 100px;
+    padding: 0 18px 80px 18px;
 
   }
 }

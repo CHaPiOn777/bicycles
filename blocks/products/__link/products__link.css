@@ -11,28 +11,28 @@
 .products__link:hover {
   opacity: 0.6;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .products__link {
     font-size: calc(11px + 11.9 * ((100vw - 320px) / 1440));
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .products__link {
     font-size: calc(11px + 7 * (100vw / 1440));
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .products__link {
     line-height: calc(14px + 23.8 * ((100vw - 320px) / 1440));
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .products__link {
     line-height: calc(14px + 14 * (100vw / 1440));
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   .products__link {
     justify-self: center;
     display: block;

@@ -1,0 +1,40 @@
+.title {
+  margin: 0;
+  padding: 0;
+  color: var(--title-color);
+  opacity: 1;
+  font-weight: 700;
+  grid-area: title;
+  letter-spacing: -0.5px;
+  margin-top: 80px;
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: calc(32px + 39.1 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: calc(32px + 23 * (100vw / 1440));
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    line-height: calc(40px + 34 * ((100vw - 320px) / 1440));
+  }
+}
+@media (min-width: 768px) {
+  .title {
+    line-height: calc(40px + 20 * (100vw / 1440));
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    width: calc(100vw - 36px);
+    margin: 0;
+    border-top: 1px solid var(--border-line);
+    padding-top: 40px;
+    width: calc(100vw - 36px);
+  }
+}/*# sourceMappingURL=title.css.map */

@@ -1,0 +1,15 @@
+
+@media (max-width: 768px) {
+  .header__navigation {
+    background-color: var(--bg);
+    transition: all .5s ease-in-out;
+    transform: translateY(-100%);
+    position: absolute;
+    width: 100vw;
+    top: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

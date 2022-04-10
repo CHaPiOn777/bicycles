@@ -4,13 +4,13 @@
   overflow: hidden;
   display: grid;
   position: relative;
-  margin: 0 0 0 120px;
+  margin: 0 0 40px 120px;
   grid-template-areas: "title" "text" "img" "btn";
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .slider {
-    margin: 0 18px;
+    margin: 0 18px 80px 18px;
     max-width: 767px;
     grid-template-columns: repeat(2, 50%);
     grid-template-areas: "title btn" "img img" "text text";

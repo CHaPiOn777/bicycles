@@ -1,0 +1,16 @@
+
+@media (max-width: 768px) {
+
+  .header__burger_active::after {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -70%);
+  }
+  .header__burger_active::before {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 70%);
+  }
+  .header__burger_active .header__burger-item {
+    visibility: hidden;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,13 @@
+.footer__icons-small {
+  display: none;
+}
+@media (max-width: 768px) {
+  .footer__icons-small {
+    display: block;
+    background-image: var(--footer-icon-small);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 38px;
+    height: 38px;
+  }
+}

@@ -5,7 +5,7 @@
   @include reset;
 
   cursor: url(../../../img/cursor.svg), pointer;
-  min-width: 350px;
+  width: 350px;
   min-height: 50px;
 
   border: 1px solid var(--input-border);
@@ -31,4 +31,9 @@
 }
 .footer__input-email:focus::placeholder{
   opacity: 0;
+}
+@media (max-width: 768px) {
+  .footer__input-email {
+    width: calc(284px - 25px);
+  }
 }

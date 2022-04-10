@@ -1,4 +1,13 @@
 .trenning__links {
   display: flex;
   margin-top: 182px;
+  grid-area: link;
+}
+
+
+@media (max-width: 1200px) {
+  .trenning__links {
+    margin-top: 40px;
+
+  }
 }

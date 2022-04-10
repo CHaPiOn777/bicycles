@@ -13,6 +13,7 @@
   --bg-btn: #FFFFFF;
   --info-color: #222222;
   --bg-footer: #EFEFEF;
+  --border-line: #E3E3E3;
   --bg-slider-btn: #EBEBEB;
   --input-border: rgb(199, 199, 199, .5);
   --input-border-active: rgb(199, 199, 199);
@@ -22,6 +23,7 @@
   --icon-white: url(../../../img/Vectorwhite-wt.svg);
   --arrow-small-left: url(../../img/small-left.svg);
   --arrow-small-right: url(../../img/small-right.svg);
+  --footer-icon-small: url(../../../img/logo-white.svg);
 
   position: relative;
   font-family: 'Inter', sans-serif;
@@ -34,6 +36,7 @@
 
 @media (max-width: 767px) {
   .pages {
+
     max-width: 767px;
   }
 }

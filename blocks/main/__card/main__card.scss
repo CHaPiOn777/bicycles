@@ -3,20 +3,42 @@
 .main__card {
   @include drop-shadow;
 
+  background-image: url(../../../img/велосипед_на_гл_экране.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
   background-color: #F4F4F4;
   position: sticky;
   top: 350px;
-  bottom: 50px;
-  right: 370px;
 
-  width: 440px;
-  height: 300px;
+  width: 340px;
+  height: 260px;
   border-radius: 20px;
+
+  cursor: url(../../../img/cursor.svg), pointer;
+  padding: 20px 50px;
+  // width: 80%;
+  // max-width: 340px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .main__card {
-    width: 234px;
-    height: 160px;
+    background-size: auto;
+    width: 341px;
+    height: 241px;
+    // /* left: -106px; */
+    top: 150px;
+    padding: 11px 27px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main__card {
+    background-size: contain;
+    width: 180px;
+    height: 138px;
+
+    top: 150px;
+    padding: 11px 27px;
   }
 }

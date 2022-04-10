@@ -5,8 +5,15 @@
 @media (max-width: 1200px) {
   .pagination {
     display: flex;
+    gap: 8px;
+    padding-top: 30px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .pagination {
     gap: 5px;
     padding-top: 15px;
-    justify-content: center;
   }
 }

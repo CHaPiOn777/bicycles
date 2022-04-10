@@ -1,0 +1,12 @@
+.header__icons {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header__icons {
+    display: flex;
+    align-items: center;
+    margin-top: 316px;
+    gap: 22px;
+  }
+}

@@ -1,5 +1,7 @@
 @import '../../../mixins/mixins';
 
-.trenning__title {
-  @include reset;
+@media (min-width: 1200px) {
+  .trenning__title {
+    @include reset;
+  }
 }

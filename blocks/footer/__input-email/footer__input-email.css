@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   cursor: url(../../../img/cursor.svg), pointer;
-  min-width: 350px;
+  width: 350px;
   min-height: 50px;
   border: 1px solid var(--input-border);
   border-radius: 4px;
@@ -70,4 +70,10 @@
 
 .footer__input-email:focus::placeholder {
   opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .footer__input-email {
+    width: 259px;
+  }
 }/*# sourceMappingURL=footer__input-email.css.map */

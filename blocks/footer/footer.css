@@ -8,10 +8,8 @@
   transition: all 0.5s ease-in-out;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .footer {
-    max-width: 320px;
-    overflow: hidden;
-    padding: 60px 18px 16px 18px;
+    padding: 60px 18px 25px 18px;
   }
 }/*# sourceMappingURL=footer.css.map */

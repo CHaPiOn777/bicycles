@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .header__burger-item {
+    content: "";
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--title-color);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 3px;
+    transform: scale(1) translate(0px, -50%);
+  }
+}/*# sourceMappingURL=header__burger-item.css.map */

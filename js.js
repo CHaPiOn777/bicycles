@@ -2,8 +2,8 @@
 const btnRight = document.querySelector('.btn-right'),
       btnLeft = document.querySelector('.btn-left'),
       sliderContent = document.querySelector('.slider'),
-      sliderTitle = sliderContent.querySelector('.block-text__title'),
-      sliderText = sliderContent.querySelector('.block-text__text'),
+      sliderTitle = sliderContent.querySelector('.title'),
+      sliderText = sliderContent.querySelector('.text'),
       slider = document.querySelector('.slider__img'),
       sliderIcon = document.querySelector('.slider__img-item-icon'),
 
@@ -13,7 +13,8 @@ const btnRight = document.querySelector('.btn-right'),
       inputFooter = document.querySelector('.footer__input-email'),
       btnInputFooter = document.querySelector('.footer__input-btn'),
       body = document.querySelector('.pages'),
-      btnTheme = document.querySelector('.switch__checkbox'),
+      bodyWidth = document.querySelector('.pages').offsetWidth,
+      btnTheme = document.querySelectorAll('.switch__checkbox'),
 
       navigation = document.querySelector('.products__navigation'),
       arrowNav = document.querySelector('.products__arrow'),
@@ -25,11 +26,13 @@ const btnRight = document.querySelector('.btn-right'),
 
       cardItem = document.querySelector('.card-item'),
 
+      burger = document.querySelector('.header__burger'),
+      burgerItem = document.querySelector('.header__list'),
+      header = document.querySelector('.header'),
+      headerNavigation = document.querySelector('.header__navigation'),
+      headerLink = document.querySelectorAll('.header__link'),
+
       pagination = document.querySelectorAll('.pagination__item');
-
-
-// document.addEventListener('mousemove', swipeAction, false);
-// document.addEventListener('mouseup', swipeEnd, false);
 
 let blockSliderWidth = document.querySelector('.img-item').offsetWidth;
 let position = 0;
@@ -72,7 +75,6 @@ let swipeStart = function(evt) {
 
   cardsSliderOne.addEventListener('touchmove', swipeAction);
   cardsSliderOne.addEventListener('touchend', swipeEnd);
-
 }
 
 
@@ -85,7 +87,7 @@ let swipeAction = function(evt) {
 
   posX2 = posX1 - touch;
   posX1 = touch;
-  cardsSliderOne.style.transform = `translateX(${transform - posX2/2}px)`;
+  cardsSliderOne.style.transform = `translateX(${transform - posX2 * .75}px)`;
 
 }
 swipeEnd = function() {
@@ -118,9 +120,20 @@ cardsSliderOne.style.transform = 'translateX(0px)';
 
 
 cardsSliderOne.addEventListener('touchstart', swipeStart);
-
 // cardsSliderOne.addEventListener('mousedown', swipeStart);
 
+function toggleBurger() {
+  toggleClass(burger, 'header__burger_active');
+  toggleClass(burgerItem, 'header__list_active');
+  toggleClass(header, 'header_active');
+  toggleClass(body, 'pages_active');
+  toggleAllClass(headerLink, 'header__link-burger');
+  toggleClass(headerNavigation, 'header__navigation_active');
+  let headerLinkBurger = document.querySelectorAll('.header__link-burger');
+  headerLinkBurger.forEach((item) => {
+    item.addEventListener('click', toggleBurger)
+  })
+}
 function submitFormHandler (evt) {
   evt.preventDefault();
   inputFooter.value = 'Круто!';
@@ -128,6 +141,11 @@ function submitFormHandler (evt) {
 }
 function addClass (when, what) {
   when.classList.add(what);
+}
+function addAllClass(when, what) {
+  when.forEach((item) => {
+    deleteClass(item, what)
+  })
 }
 function toggleClass (when, what) {
   when.classList.toggle(what);
@@ -163,13 +181,8 @@ function addSliderContent (title, text) {
   sliderText.innerHTML = text;
 }
 
-btnTheme.addEventListener('click', () => {
-  if (btnTheme.checked === true) {
-    addClass(body, 'pages_theme_black');
-  } else {
-    deleteClass(body, 'pages_theme_black')
-  }
-})
+
+
 
 inputFooter.oninput = function() {
   if (this.value === '') {
@@ -251,8 +264,12 @@ for (let i = 0; i < linksSlider.length; i++) {
     deleteAllClass(cardsSlider, 'cards_active');
     addClass(cardsSlider[i], 'cards_active');
     addClass(linksSlider[i], 'products__link_active');
+
     cardsSliderOne = document.querySelector('.cards_active');
     cardsSliderOne.style.transform = 'translateX(0px)';
+    slideIndex = 0;
+    arrowNav.style.transform += `rotate(180deg)`;
+    arrowNav.style.top = '9px';
     cardsSliderOne.addEventListener('touchstart', swipeStart);
     acticatePagination(0);
   });
@@ -265,3 +282,14 @@ arrowNav.addEventListener('touchend', () => {
 }, false)
 
 btnInputFooter.addEventListener('click', submitFormHandler);
+burger.addEventListener('click', toggleBurger);
+
+btnTheme.forEach((item) => {
+  item.addEventListener('click', () => {
+    if (item.checked === true) {
+      addClass(body, 'pages_theme_black');
+    } else {
+      deleteClass(body, 'pages_theme_black')
+    }
+  })
+})

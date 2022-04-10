@@ -1,4 +1,14 @@
 .trenning__img {
   max-width: 580px;
   max-height: 460px;
+  grid-area: img;
+  max-width: 100%;
+}
+
+
+@media (max-width: 1200px) {
+  .trenning__img {
+    margin-top: 40px;
+    width: calc(100vw - 66px);
+  }
 }
